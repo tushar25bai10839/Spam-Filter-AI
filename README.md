@@ -63,9 +63,14 @@ Type exit to close the program.
 🧠 The Math Behind It
 
 The core formula used to classify a message is Bayes' Theorem:
+
 P(Spam | W) = (P(W | Spam) * P(Spam)) / P(W)
-To prevent the "Zero Frequency Problem" (where a new word crashes the probability to 0), we use Laplace Smoothing:
+
+To prevent the "Zero Frequency Problem" (where a new word crashes the probability to 0)
+,we use Laplace Smoothing:
+
 P(w | c) = (count(w, c) + 1) / (count(c) + |V| + 1)
+
 📊 Sample Output
 
 === Custom Spam Filter (No External Libraries) === Training model from scratch (calculating probabilities)... Learned 154 unique words. System ready. Type a message to check.
@@ -73,9 +78,16 @@ P(w | c) = (count(w, c) + 1) / (count(c) + |V| + 1)
 Enter message: Urgent! Claim your lottery reward now Result: SPAM (Score: -14.52)
 
 Enter message: Hey, are we still meeting for lunch? Result: NOT SPAM (Score: -12.30)
+
+
 👤 Author Details
+
 Submitted By:
+
 Name: Tushar Kumar Yadav
+
 Roll Number: 25BAI10839
+
 Degree: B.Tech (AI & ML)
+
 Institution: VIT Bhopal University
